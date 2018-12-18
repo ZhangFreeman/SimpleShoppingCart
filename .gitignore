@@ -1,0 +1,24 @@
+#java class file
+*.class
+
+# package file
+*.war
+
+# idea
+.idea/
+/idea/
+/out
+*.ipr
+*.iml
+*.iws
+
+# tmp file
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+# system ignore
+.DS_Store
+Thumbs.db
