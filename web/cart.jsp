@@ -12,13 +12,7 @@
         <base href="<%=basePath%>">
         <title>ShoppingCart</title>
         <link rel="stylesheet" type="text/css" href="<%=basePath%>/css/style.css" />
-        <script language="javascript">
-	    function delcfm() {
-	        if (!confirm("Confirm Delete？")) {
-	            window.event.returnValue = false;
-	        }
-	    }
-   </script>
+        <script type="text/javascript" src="<%=basePath%>/js/script.js"></script>
     </head>
 
     <body>

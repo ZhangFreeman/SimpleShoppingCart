@@ -15,28 +15,7 @@
         <title>Details</title>
 
         <link rel="stylesheet" type="text/css" href="<%=basePath%>/css/style.css" />
-        <script type="text/javascript">
-      function add_cart(id) {
-         var num =  document.getElementById("number").value;
-         window.location.href='<%=path%>/servlet/CartServlet?gid='+id+'&num='+num+'&action=add';
-      }
-      function show_cart(id) {
-         window.location.href='<%=path%>/servlet/CartServlet?gid='+id+'&action=show';
-      }
-      function add() {
-         var num = parseInt(document.getElementById("number").value);
-         if(num < 100) {
-            document.getElementById("number").value = ++num;
-         }
-      }
-      function sub() {
-         var num = parseInt(document.getElementById("number").value);
-         if(num > 1) {
-            document.getElementById("number").value = --num;
-         }
-      }
-
-    </script>
+        <script type="text/javascript" src="<%=basePath%>/js/script.js"></script>
     </head>
     <body>
         <div class="container-center">
@@ -60,8 +39,8 @@
                     Number：<span onclick="sub();">-</span><input type="text" id="number" name="number" value="1" size="2"/><span onclick="add();">+</span>
                 </div>
                 <div>
-                    <button onclick="add_cart(<%=item.getId()%>)" class="btn">Add to cart</button>&nbsp;
-                    <button onclick="show_cart(<%=item.getId()%>)" class="btn">Show cart</button>
+                    <button onclick="add_cart(<%=item.getId()%>, '<%=basePath%>')" class="btn">Add to cart</button>&nbsp;
+                    <button onclick="show_cart(<%=item.getId()%>, '<%=basePath%>')" class="btn">Show cart</button>
                 </div>
                 <%
                     }
