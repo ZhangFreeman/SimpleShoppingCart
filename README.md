@@ -3,7 +3,8 @@
 This is a simple Tomcat project that simulate the very basic operation of EC site.
 I created it for learn Tomcat and basic of java web application.
 
-I used SDK1.7 and Tomcat 7, for database I used MySQL
+I used SDK1.7 and Tomcat 7, for database I used MySQL.
+I structured the project with MVC. 
 It allows user registration&login, add/remove goods to/from shopping cart and check shopping cart content.
 For a learning purpose, I avoided using thrid party packages. (Except mysql driver of course)
 
